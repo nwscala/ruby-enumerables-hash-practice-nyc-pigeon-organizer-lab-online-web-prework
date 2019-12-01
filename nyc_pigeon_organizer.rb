@@ -17,6 +17,24 @@ def nyc_pigeon_organizer(data)
         end 
       end 
     end 
+  end
+  data[:gender].each do |pigeon_gender, name|
+    name.each do |pigeon_name|
+      pigeon_name_array.each do |item|
+        if pigeon_name == item
+          final[item][:gender] << pigeon_gender.to_s
+        end 
+      end 
+    end 
+  end 
+  data[:lives].each do |pigeon_lives, name|
+    name.each do |pigeon_name|
+      pigeon_name_array.each do |item|
+        if pigeon_name == item
+          final[item][:lives] << pigeon_lives.to_s
+        end 
+      end 
+    end 
   end 
   final 
 end
