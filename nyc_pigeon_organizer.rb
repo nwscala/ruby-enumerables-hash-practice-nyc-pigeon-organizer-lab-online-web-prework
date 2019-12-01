@@ -13,7 +13,8 @@ def nyc_pigeon_organizer(data)
     name.each do |pigeon_name|
       pigeon_name_array.each do |item|
         if pigeon_name == item
-          
+          final[item][:color] << pigeon_color.to_s
+        end 
       end 
     end 
   end 
