@@ -12,7 +12,8 @@ def nyc_pigeon_organizer(data)
   data[:color].each do |pigeon_color, name|
     name.each do |pigeon_name|
       pigeon_name_array.each do |item|
-        
+        if pigeon_name == item
+          
       end 
     end 
   end 
